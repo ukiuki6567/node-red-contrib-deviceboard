@@ -5,7 +5,8 @@ module.exports = function(red) {
 
 		try {
 			node.on('input', function(msg) {
-				node.send("Hello!");
+				msg.payload = "Hello!";
+				node.send(msg);
 			});
 		}catch(e) {
 			node.error(e);
