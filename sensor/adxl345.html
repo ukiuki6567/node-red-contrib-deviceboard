@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	RED.nodes.registerType('adxl345', {
+		category: 'DeviceBoard',
+		defaults: {
+			sample: {value: ""}
+		},
+		inputs: 1,
+		outputs: 1,
+		align: "left",
+		color: "#CCCCCC",
+		icon: "font-awesome/fa-tachometer",
+		label: function(){
+			return this.name || "adxl345";
+		}
+	});
+</script>
+
+<script type="text/x-red" data-template-name="adxl345">
+<div class="form-row">
+	<label for="node-input-sample"><i class="icon-tag"></i>sample</label>
+	<input type="text" id="node-input-sample" placeholder="sample">
+</div>
+</script>
+
+<script type="text/x-red" data-help-name="adxl345">
+<!-- 説明 -->
+</script>

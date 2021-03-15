@@ -1,0 +1,31 @@
+{
+  "name": "red-contrib-deviceboard",
+  "version": "1.0.0",
+  "description": "For operating RaspiDeviceBoard v1.0.0",
+  "main": "app.js",
+  "node-red": {
+    "nodes": {
+      "TactSwitch": "sensor/tact_switch.js",
+      "MCP3004": "sensor/mcp3004.js",
+      "ADXL345": "sensor/adxl345.js",
+      "BME680": "sensor/bme680.js",
+      "OLED": "actuator/oled.js",
+      "NJM2670": "actuator/njm2670.js",
+      "RGBLED": "actuator/rgbled.js",
+      "Buzzer": "actuator/buzzer.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ukiuki6567/node-red-contrib-deviceboard.git"
+  },
+  "author": "KokiOta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ukiuki6567/node-red-contrib-deviceboard/issues"
+  },
+  "homepage": "https://github.com/ukiuki6567/node-red-contrib-deviceboard#readme"
+}

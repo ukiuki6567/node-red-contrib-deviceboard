@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	RED.nodes.registerType('njm2670', {
+		category: 'DeviceBoard',
+		defaults: {
+			sample: {value: ""}
+		},
+		inputs: 1,
+		outputs: 1,
+		align: "left",
+		color: "#CCCCCC",
+		icon: "serial.png",
+		label: function(){
+			return this.name || "njm2670";
+		}
+	});
+</script>
+
+<script type="text/x-red" data-template-name="njm2670">
+<div class="form-row">
+	<label for="node-input-sample"><i class="icon-tag"></i>sample</label>
+	<input type="text" id="node-input-sample" placeholder="sample">
+</div>
+</script>
+
+<script type="text/x-red" data-help-name="njm2670">
+<!-- 説明 -->
+</script>

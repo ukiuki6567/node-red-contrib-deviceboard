@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	RED.nodes.registerType('oled', {
+		category: 'DeviceBoard',
+		defaults: {
+			sample: {value: ""}
+		},
+		inputs: 1,
+		outputs: 1,
+		align: "left",
+		color: "#CCCCCC",
+		icon: "font-awesome/fa-tv",
+		label: function(){
+			return this.name || "oled";
+		}
+	});
+</script>
+
+<script type="text/x-red" data-template-name="oled">
+<div class="form-row">
+	<label for="node-input-sample"><i class="icon-tag"></i>sample</label>
+	<input type="text" id="node-input-sample" placeholder="sample">
+</div>
+</script>
+
+<script type="text/x-red" data-help-name="oled">
+<!-- 説明 -->
+</script>

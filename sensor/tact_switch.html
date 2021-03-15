@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	RED.nodes.registerType('tact_switch', {
+		category: 'DeviceBoard',
+		defaults: {
+			sample: {value: ""}
+		},
+		inputs: 1,
+		outputs: 1,
+		align: "left",
+		color: "#CCCCCC",
+		icon: "font-awesome/fa-power-off",
+		label: function(){
+			return this.name || "tact_switch";
+		}
+	});
+</script>
+
+<script type="text/x-red" data-template-name="tact_switch">
+<div class="form-row">
+	<label for="node-input-sample"><i class="icon-tag"></i>sample</label>
+	<input type="text" id="node-input-sample" placeholder="sample">
+</div>
+</script>
+
+<script type="text/x-red" data-help-name="tact_switch">
+<!-- 説明 -->
+</script>

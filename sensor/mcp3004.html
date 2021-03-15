@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	RED.nodes.registerType('mcp3004', {
+		category: 'DeviceBoard',
+		defaults: {
+			sample: {value: ""}
+		},
+		inputs: 1,
+		outputs: 1,
+		align: "left",
+		color: "#CCCCCC",
+		icon: "font-awesome/fa-exchange",
+		label: function(){
+			return this.name || "mcp3004";
+		}
+	});
+</script>
+
+<script type="text/x-red" data-template-name="mcp3004">
+<div class="form-row">
+	<label for="node-input-sample"><i class="icon-tag"></i>sample</label>
+	<input type="text" id="node-input-sample" placeholder="sample">
+</div>
+</script>
+
+<script type="text/x-red" data-help-name="mcp3004">
+<!-- 説明 -->
+</script>
