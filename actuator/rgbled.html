@@ -2,7 +2,7 @@
 	RED.nodes.registerType('rgbled', {
 		category: 'DeviceBoard',
 		defaults: {
-			sample: {value: ""}
+			name: {value: ""}
 		},
 		inputs: 1,
 		outputs: 1,
@@ -17,8 +17,8 @@
 
 <script type="text/x-red" data-template-name="rgbled">
 <div class="form-row">
-	<label for="node-input-sample"><i class="icon-tag"></i>sample</label>
-	<input type="text" id="node-input-sample" placeholder="sample">
+	<label for="node-input-name"><i class="icon-tag"></i>名前</label>
+	<input type="text" id="node-input-name" placeholder="名前">
 </div>
 </script>
 
