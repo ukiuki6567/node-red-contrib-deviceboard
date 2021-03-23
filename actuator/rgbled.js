@@ -3,6 +3,10 @@ const Red = new Gpio(17, {mode: Gpio.OUTPUT});
 const Green = new Gpio(27, {mode: Gpio.OUTPUT});
 const Blue = new Gpio(22, {mode: Gpio.OUTPUT});
 
+Red.digitalWrite(1);
+Green.digitalWrite(1);
+Blue.digitalWrite(1);
+
 module.exports = function(red) {
 	function rgbled(conf) {
 		red.nodes.createNode(this, conf);
