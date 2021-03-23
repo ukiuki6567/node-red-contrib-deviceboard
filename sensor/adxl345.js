@@ -2,7 +2,7 @@ const ADXL345 = require('adxl345-sensor');
 const adxl345 = new ADXL345();
 
 const getAcceleration = () => {
-	adxl345.getAcceleration(true) // true for g-force units, else false for m/s²
+	adxl345.getAcceleration(false) // true for g-force units, else false for m/s²
 		.then((acceleration) => {
 			console.log(`acceleration = ${JSON.stringify(acceleration, null, 2)}`);
 			setTimeout(getAcceleration, 1000);
