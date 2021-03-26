@@ -7,8 +7,19 @@ module.exports = function(red) {
 
 		try {
 			node.on('input', function(msg) {
+				const analogSensor = mcpadc.open(msg.channel ,err => {
+					if(err){
+						throw err;
+					}
+					analogSensor.read((err, reading) => {
+						if(err){
+							throw err;
+						}
+						msg.payload = reading.value*1024;
+						node.send(msg);
+					});
+				});
 
-				node.send(msg);
 			});
 		}catch(e) {
 			node.error(e);
