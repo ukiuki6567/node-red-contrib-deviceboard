@@ -29,6 +29,7 @@ module.exports = function(red) {
 				oled.clearDisplay();
 				oled.setCursor(1, 1);
 				oled.writeString(font, msg.size, msg.payload, 1, true);
+				node.send(msg);
 			});
 		}catch(e) {
 			node.error(e);
