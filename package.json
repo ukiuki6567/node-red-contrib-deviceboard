@@ -13,7 +13,8 @@
       "NJM2670": "actuator/njm2670.js",
       "RGBLED": "actuator/rgbled.js",
       "Buzzer": "actuator/buzzer.js",
-      "NJL7502l": "sensor/njl7502l.js"
+      "NJL7502l": "sensor/njl7502l.js",
+      "GPIO_OUT": "actuator/gpio_pin.js"
     }
   },
   "scripts": {

@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	RED.nodes.registerType('gpio_pin', {
+		category: 'DeviceBoard',
+		defaults: {
+			name: {value: ""}
+		},
+		inputs: 1,
+		outputs: 1,
+		align: "left",
+		color: "#CCCCCC",
+		icon: "debug.png",
+		label: function(){
+			return this.name || "gpio_pin";
+		}
+	});
+</script>
+
+<script type="text/x-red" data-template-name="gpio_pin">
+<div class="form-row">
+	<label for="node-input-name"><i class="icon-tag"></i>名前</label>
+	<input type="text" id="node-input-name" placeholder="名前">
+</div>
+</script>
+
+<script type="text/x-red" data-help-name="gpio_pin">
+<!-- 説明 -->
+</script>
