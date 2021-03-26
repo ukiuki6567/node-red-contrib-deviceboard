@@ -12,7 +12,8 @@
       "OLED": "actuator/oled.js",
       "NJM2670": "actuator/njm2670.js",
       "RGBLED": "actuator/rgbled.js",
-      "Buzzer": "actuator/buzzer.js"
+      "Buzzer": "actuator/buzzer.js",
+      "NJL7502l": "sensor/njl7502l.js"
     }
   },
   "scripts": {
